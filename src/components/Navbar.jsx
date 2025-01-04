@@ -6,14 +6,15 @@ import { GrClose } from "react-icons/gr";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
+  const pageId = lowerCasePage === "services" ? "skills" : lowerCasePage;
 
   return (
     <AnchorLink
-      href={`#${lowerCasePage}`}
+      href={`#${pageId}`}
       className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
+        selectedPage === pageId ? "text-yellow" : ""
       } hover:text-yellow transition duration-200`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      onClick={() => setSelectedPage(pageId)}
     >
       {page}
     </AnchorLink>
@@ -40,7 +41,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             />
 
             <Link
-              page="Skills"
+              page="Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

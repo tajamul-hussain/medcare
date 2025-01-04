@@ -22,13 +22,15 @@ const MySkills = ({ setSelectedPage }) => {
           }}
         >
           <p className="font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            OUR <span className="text-red">SERVICES</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10">
-            As a MERN stack developer, one wields a comprehensive skill set,
-            harnessing MongoDB, Express.js, React, and Node.js to architect and
-            deploy full-stack web applications. Proficiency spans front-end...
+            At MedCare, we specialize in comprehensive elderly care and wellness
+            assistance, providing tailored healthcare solutions that prioritize
+            the physical, emotional, and social well-being of our clients. Our
+            team of trained professionals delivers personalized care plans,
+            ensuring comfort and dignity for your loved ones.
           </p>
         </motion.div>
 
@@ -51,9 +53,9 @@ const MySkills = ({ setSelectedPage }) => {
         </div>
       </div>
 
-      {/* Skills */}
+      {/* Services Section */}
       <div className="md:flex md:justify-between mt-8 gap-32">
-        {/* Experience */}
+        {/* Medical Assistance */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -68,17 +70,19 @@ const MySkills = ({ setSelectedPage }) => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-semibold text-5xl">01</p>
-              <p className="font-semibold text-3xl mt-3 ">Experience</p>
+              <p className="font-semibold text-3xl mt-3">Medical Assistance</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5 ">
-            With a rich professional background, I've accumulated extensive
-            experience in crafting and...
+          <p className="mt-5">
+            Comprehensive medical support including routine healthcare
+            monitoring, specialized home medical services, post-surgical care,
+            and rehabilitation programs. Our trained staff ensures professional
+            care delivery with 24/7 emergency response capabilities.
           </p>
         </motion.div>
 
-        {/* Innovation */}
+        {/* Wellness Programs */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -93,17 +97,19 @@ const MySkills = ({ setSelectedPage }) => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-semibold text-5xl">02</p>
-              <p className="font-semibold text-3xl mt-3 ">Innovative</p>
+              <p className="font-semibold text-3xl mt-3">Wellness Programs</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5 ">
-            Championing innovation, I consistently seek inventive approaches to
-            tackle challenges...
+          <p className="mt-5">
+            Holistic wellness solutions including mental health support,
+            nutritional guidance, physical therapy, and lifestyle management. We
+            offer personalized care plans, group therapy sessions, and
+            specialized fitness programs for seniors.
           </p>
         </motion.div>
 
-        {/* Imaginative */}
+        {/* Support Services */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -118,13 +124,15 @@ const MySkills = ({ setSelectedPage }) => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-semibold text-5xl">03</p>
-              <p className="font-semibold text-3xl mt-3 ">Imaginative</p>
+              <p className="font-semibold text-3xl mt-3">Support Services</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Fueled by imagination, I embark on a creative journey to
-            conceptualize and craft unique digital experiences...
+            Comprehensive support including caregiver training, respite care,
+            telehealth services, and home safety assessments. We also facilitate
+            social activities and provide technological solutions for remote
+            monitoring and care management.
           </p>
         </motion.div>
       </div>
