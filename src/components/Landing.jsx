@@ -26,29 +26,8 @@ const Landing = ({ setSelectedPage }) => {
 
       {/* Content Container */}
       <div className="w-5/6 mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between">
-        {/* Image Section */}
-        <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
-          {isAboveMediumScreens ? (
-            <div className="relative w-[300px] z-0 ml-20 before:absolute before:-top-8 before:-left-16 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
-              <img
-                className="h-[400px] rounded-t-[400px] saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] shadow-xl"
-                src="../assets/MedCare.jpeg"
-                alt="Caring medical professional"
-              />
-            </div>
-          ) : (
-            <div className="relative w-[300px] z-0 ml-20 before:absolute before:-top-6 before:-left-14 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
-              <img
-                className="h-[400px] rounded-t-[400px] saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] shadow-xl"
-                src="../assets/MedCare.jpeg"
-                alt="Caring medical professional"
-              />
-            </div>
-          )}
-        </div>
-
-        {/* Main Section */}
-        <div className="z-30 basis-2/5 mt-12 md:mt-32">
+        {/* Main Section - Larger Left Side */}
+        <div className="z-30 basis-3/4 mt-12 md:mt-32">
           {/* Headings */}
           <motion.div
             initial="hidden"
@@ -132,6 +111,27 @@ const Landing = ({ setSelectedPage }) => {
           >
             <SocialMediaIcons />
           </motion.div>
+        </div>
+
+        {/* Image Section - Smaller Right Side */}
+        <div className="flex justify-center basis-1/4 z-10 mt-16 md:mt-32">
+          {isAboveMediumScreens ? (
+            <div className="relative w-[150px] z-0 ml-20 before:absolute before:-top-8 before:-left-16 before:rounded-t-[400px] before:w-full before:max-w-[200px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+              <img
+                className="h-[250px] rounded-t-[400px] saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[250px] shadow-xl"
+                src="../assets/MedCare.jpeg"
+                alt="Caring medical professional"
+              />
+            </div>
+          ) : (
+            <div className="relative w-[150px] z-0 ml-20 before:absolute before:-top-6 before:-left-14 before:rounded-t-[400px] before:w-full before:max-w-[200px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+              <img
+                className="h-[250px] rounded-t-[400px] saturate-150 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[250px] shadow-xl"
+                src="../assets/MedCare.jpeg"
+                alt="Caring medical professional"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
