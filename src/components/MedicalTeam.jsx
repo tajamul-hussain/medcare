@@ -1,88 +1,79 @@
-import React from "react";
 import { motion } from "framer-motion";
 import LineGradient from "./shared/LineGradient";
+import { teamData } from "../data/teamData";
 
 const MedicalTeam = ({ setSelectedPage }) => {
-  const teamMemberStyles =
-    "mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-16";
-
-  const teamMembers = [
-    {
-      name: "Dr. Sarah Johnson",
-      role: "Chief Medical Officer",
-      image: "./assets/person-1.png",
-      description:
-        "Specialized in Emergency Medicine with 15+ years of experience in home healthcare services.",
-      bgColor: "bg-blue",
-    },
-    {
-      name: "Dr. Michael Chen",
-      role: "Senior Physician",
-      image: "./assets/person-2.png",
-      description:
-        "Expert in Geriatric Care and Chronic Disease Management with a focus on personalized treatment plans.",
-      bgColor: "bg-red",
-    },
-    {
-      name: "Nurse Rebecca White",
-      role: "Head of Nursing",
-      image: "./assets/person-3.png",
-      description:
-        "Registered Nurse with extensive experience in critical care and home nursing management.",
-      bgColor: "bg-yellow",
-    },
-  ];
-
   return (
-    <section id="team" className="pt-32 pb-16 mb-2">
-      {/* Heading */}
+    <section id="team" className="pt-32 pb-16">
+      {/* HEADING */}
       <motion.div
-        className="md:w-1/3 text-center md:text-left"
+        className="md:w-2/4 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
         }}
       >
-        <p className="font-semibold text-4xl mb-5">
-          OUR <span className="text-red">MEDICAL TEAM</span>
-        </p>
-        <LineGradient width="w-2/4 mx-auto md:mx-0" />
-        <p className="mt-10">
-          Meet our experienced healthcare professionals dedicated to providing
-          exceptional medical care in the comfort of your home.
+        <div>
+          <p className="font-semibold text-4xl">
+            Our <span className="text-red">Team</span>
+          </p>
+          <div className="flex justify-center mt-5">
+            <LineGradient width="w-1/3" />
+          </div>
+        </div>
+        <p className="mt-10 mb-10">
+          Meet our dedicated team of healthcare professionals committed to
+          providing you with the best care
         </p>
       </motion.div>
 
-      {/* Team Members */}
-      <div className="md:flex md:justify-between gap-8">
-        {teamMembers.map((member, index) => (
+      {/* TEAM MEMBERS */}
+      <div className="grid md:grid-cols-3 gap-8 mt-16">
+        {teamData.map((member, index) => (
           <motion.div
-            key={member.name}
-            className={`${member.bgColor} ${teamMemberStyles}`}
+            key={member.id}
+            className="bg-red rounded-xl shadow-md overflow-hidden"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
             transition={{ delay: index * 0.2, duration: 0.5 }}
             variants={{
-              hidden: { opacity: 0, scale: 0.8 },
-              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="absolute -top-10 left-0 w-full flex justify-center">
+            <div className="relative h-48">
               <img
-                className="w-[150px] h-[150px] rounded-full object-cover border-4 border-white shadow-lg"
                 src={member.image}
                 alt={member.name}
+                className="w-full h-full object-cover"
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                <p className="text-yellow">{member.role}</p>
+              </div>
             </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-              <p className="text-lg font-semibold mb-4">{member.role}</p>
-              <p className="text-sm">{member.description}</p>
+
+            <div className="p-6">
+              <div className="mb-4">
+                <p className="text-sm font-semibold text-yellow">
+                  {member.specialization}
+                </p>
+                <p className="text-sm">{member.experience} Experience</p>
+              </div>
+
+              <p className="text-sm mb-4">{member.description}</p>
+
+              <div className="text-sm">
+                <p className="font-semibold">Qualifications:</p>
+                <p className="mb-2">{member.qualifications}</p>
+                <p className="font-semibold">Availability:</p>
+                <p>{member.availability}</p>
+              </div>
             </div>
           </motion.div>
         ))}
