@@ -50,7 +50,7 @@ const MedicalTeam = ({ setSelectedPage }) => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <h3 className="text-xl font-bold text-white">{member.name}</h3>

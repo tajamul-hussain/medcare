@@ -1,5 +1,9 @@
 import Aijaz from "../assets/Aijaz.jpeg";
 import Feroze from "../assets/Feroze.jpeg";
+import Name from "../assets/Name.jpeg";
+import Sajad from "../assets/Sajad.jpeg";
+import Anzal from "../assets/Anzal.jpeg";
+import Zaman from "../assets/Zaman.jpeg";
 //import doctor3 from "../assets/team/person-3.jpeg";
 
 export const teamData = [
@@ -27,10 +31,10 @@ export const teamData = [
   },
   {
     id: 3,
-    name: "Nurse Rebecca White",
+    name: "Nurse Abc",
     role: "Head Nurse",
-    image: "/assets/nurse-1.jpg",
-    specialization: "Critical Care",
+    image: Name,
+    specialization: "Bsc OT - chief of nursing and para medics",
     experience: "10+ years",
     description: "Specialized in intensive care and patient monitoring",
     qualifications: "BSN, RN",
@@ -38,9 +42,9 @@ export const teamData = [
   },
   {
     id: 4,
-    name: "Dr. James Wilson",
-    role: "Physiotherapist",
-    image: "../assets/physio-1.jpg",
+    name: "Sajad Ahmad Bhat",
+    role: "Nurse",
+    image: Sajad,
     specialization: "Physical Rehabilitation",
     experience: "8+ years",
     description: "Expert in rehabilitation and mobility improvement",
@@ -49,21 +53,21 @@ export const teamData = [
   },
   {
     id: 5,
-    name: "Ms. Emily Rodriguez",
-    role: "Mental Health Counselor",
-    image: "../assets/counselor-1.jpg",
+    name: "Anzal Mohidin",
+    role: "Nurse",
+    image: Anzal,
     specialization: "Psychology",
     experience: "7+ years",
     description: "Specialized in elderly mental health and family counseling",
-    qualifications: "MA Psychology, Licensed Counselor",
+    qualifications: "bsc nursing",
     availability: "By Appointment",
   },
   {
     id: 6,
-    name: "Mr. David Kumar",
-    role: "Care Coordinator",
-    image: "../assets/coordinator-1.jpg",
-    specialization: "Healthcare Management",
+    name: "Mr. Syed Zaman",
+    role: "Cordinator",
+    image: Zaman,
+    specialization: " Management",
     experience: "5+ years",
     description: "Coordinates patient care and service delivery",
     qualifications: "MBA Healthcare Management",
