@@ -1,20 +1,16 @@
-import React, { useState } from "react";
-import useMediaQuery from "../hooks/useMediaQuery";
+import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { GrClose } from "react-icons/gr";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
-  const pageId = lowerCasePage === "services" ? "skills" : lowerCasePage;
-
   return (
     <AnchorLink
-      href={`#${pageId}`}
       className={`${
-        selectedPage === pageId ? "text-yellow" : ""
-      } hover:text-yellow transition duration-200`}
-      onClick={() => setSelectedPage(pageId)}
+        selectedPage === lowerCasePage ? "text-yellow" : ""
+      } hover:text-yellow transition duration-500`}
+      href={`#${lowerCasePage}`}
+      onClick={() => setSelectedPage(lowerCasePage)}
     >
       {page}
     </AnchorLink>
@@ -31,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="text-3xl font-bold">MedCare</h4>
 
-        {/* Desktop Nav */}
+        {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 text-base font-semibold">
             <Link
@@ -39,14 +35,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-
             <Link
               page="Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Projects"
+              page="Team"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -63,38 +58,37 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </div>
         ) : (
           <button
-            className="rounded-full p-2 bg-green-600"
+            className="rounded-full bg-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <GiHamburgerMenu size={21} />
+            <img alt="menu-icon" src="../assets/menu-icon.svg" />
           </button>
         )}
 
-        {/* Mobile Menu PopUp */}
+        {/* MOBILE MENU POPUP */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full w-[300px] bg-blue transition duration-500">
-            {/* Close Icon */}
+          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+            {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <GrClose size={25} />
+                <img alt="close-icon" src="../assets/close-icon.svg" />
               </button>
             </div>
 
-            {/* Menu Items */}
+            {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-
               <Link
-                page="Skills"
+                page="Services"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Projects"
+                page="Team"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
