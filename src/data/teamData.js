@@ -31,7 +31,7 @@ export const teamData = [
   },
   {
     id: 3,
-    name: "Nurse Abc",
+    name: "Ishfaq Ahmad",
     role: "Head Nurse",
     image: Name,
     specialization: "Bsc OT - chief of nursing and para medics",
