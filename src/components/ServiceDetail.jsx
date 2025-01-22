@@ -6,7 +6,7 @@ const ServiceDetail = ({ service, onBack }) => {
   if (!service) return null;
 
   const handleCallButton = () => {
-    window.location.href = "tel:+911234567890"; // Replace with your actual phone number
+    window.location.href = "tel:+917780830508"; // Replace with your actual phone number
   };
 
   return (

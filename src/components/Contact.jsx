@@ -74,7 +74,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/tajamulibniibaasheer@gmail.com"
+            action="https://formsubmit.co/medcarekashmir@gmail.com"
             method="post"
           >
             <input
@@ -149,12 +149,20 @@ const Contact = () => {
               </p>
             )}
 
-            <button
-              type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
-            >
-              Send us a message
-            </button>
+            <div className="flex gap-4">
+              <button
+                type="submit"
+                className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              >
+                Send us a message
+              </button>
+              <a
+                href="tel:+917780830508"
+                className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              >
+                Call Us
+              </a>
+            </div>
           </form>
         </motion.div>
       </div>

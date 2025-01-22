@@ -1,9 +1,12 @@
 import Aijaz from "../assets/Aijaz.jpeg";
 import Feroze from "../assets/Feroze.jpeg";
 import Name from "../assets/Name.jpeg";
-import Sajad from "../assets/Sajad.jpeg";
+//import Rayees from "../assets/Sajad.jpeg";
 import Anzal from "../assets/Anzal.jpeg";
 import Zaman from "../assets/Zaman.jpeg";
+import GulAfroz from "../assets/gulafroz.jpeg";
+import Sajad from "../assets/Saja.jpeg";
+import Muzamil from "../assets/Muzamil.jpeg";
 //import doctor3 from "../assets/team/person-3.jpeg";
 
 export const teamData = [
@@ -31,17 +34,28 @@ export const teamData = [
   },
   {
     id: 3,
-    name: "Ishfaq Ahmad",
-    role: "Head Nurse",
-    image: Name,
-    specialization: "Bsc OT - chief of nursing and para medics",
-    experience: "10+ years",
-    description: "Specialized in intensive care and patient monitoring",
-    qualifications: "BSN, RN",
-    availability: "Shift-based",
+    name: "Dr. Gul Afroz",
+    role: "Medical Director",
+    image: GulAfroz,
+    specialization: "Emergency Medicine",
+    experience: "10+ years of Experience",
+    description: "",
+    qualifications: "BUMS",
+    availability: "Mon-Fri: 9AM-5PM",
   },
   {
     id: 4,
+    name: "Rouf Ahmad",
+    role: "Director Para Medics and operations",
+    image: Name,
+    specialization: "Bsc Nursing",
+    experience: "10+ years",
+    description: "Specialized in intensive care and patient monitoring",
+    qualifications: "Bsc Nursing",
+    availability: "Shift-based",
+  },
+  {
+    id: 5,
     name: "Sajad Ahmad Bhat",
     role: "Nurse",
     image: Sajad,
@@ -52,7 +66,7 @@ export const teamData = [
     availability: "Mon-Sat: 8AM-6PM",
   },
   {
-    id: 5,
+    id: 6,
     name: "Anzal Mohidin",
     role: "Nurse",
     image: Anzal,
@@ -63,7 +77,19 @@ export const teamData = [
     availability: "By Appointment",
   },
   {
-    id: 6,
+    id: 8,
+    name: "Muzamil Mushtaq",
+    role: "Nurse",
+    image: Muzamil,
+    specialization: "Nursing",
+    experience: "5+ years",
+    description:
+      "Specialized in patient care, medication management, and clinical procedures",
+    qualifications: "BSc Nursing",
+    availability: "Mon-Fri: 9AM-6PM",
+  },
+  {
+    id: 7,
     name: "Mr. Syed Zaman",
     role: "Cordinator",
     image: Zaman,
