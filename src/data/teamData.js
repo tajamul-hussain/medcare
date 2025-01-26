@@ -8,17 +8,29 @@ import GulAfroz from "../assets/gulafroz.jpeg";
 import Sajad from "../assets/Saja.jpeg";
 import Muzamil from "../assets/Muzamil.jpeg";
 //import doctor3 from "../assets/team/person-3.jpeg";
-
+import Irshad from "../assets/irshad.jpeg";
+import Mahrukh from "../assets/Mahrukh.jpeg";
 export const teamData = [
+  {
+    id: 8,
+    name: "Dr. Irshad Ahmad",
+    role: "Arthroplasty Arthroscopy,  and Trauma Surgeon",
+    image: Irshad,
+    specialization: "Surgeon",
+    experience: "10+ years",
+    description: " Arthroplasty Arthroscopy,  and Trauma Surgeon ",
+    qualifications: "MBBS , MS (Ortho)",
+    availability: "Mon-Fri: 9AM-5PM",
+  },
   {
     id: 1,
     name: "Dr. Aijaz Ahmad Malik ",
-    role: "Chief Medical Officer",
+    role: "Senior Laprascopic Surgeon",
     image: Aijaz,
     specialization: "Surgeon",
     experience: "10+ years",
-    description: "Consultant Laparoscopic Surgeon ",
-    qualifications: "FIAGES,FMAS",
+    description: " Laparoscopic Surgeon ",
+    qualifications: "",
     availability: "Mon-Fri: 9AM-5PM",
   },
   {
@@ -26,10 +38,10 @@ export const teamData = [
     name: "Dr. Feroz Ahmed Dar",
     role: "Interventional pain specialist",
     image: Feroze,
-    specialization: "Emergency Medicine",
+    specialization: "Pain Specialist",
     experience: "12+ years",
-    description: "Expert in emergency care and critical medical situations",
-    qualifications: "MBBS, MD (Emergency Medicine)",
+    //description: "Expert in emergency care and critical medical situations",
+    qualifications: "MBBS",
     availability: "24/7 On-Call",
   },
   {
@@ -41,6 +53,17 @@ export const teamData = [
     experience: "10+ years of Experience",
     description: "",
     qualifications: "BUMS",
+    availability: "Mon-Fri: 9AM-5PM",
+  },
+  {
+    id: 9,
+    name: "Dr. Mahrukh Jan",
+    //role: "Arthroplasty Arthroscopy,  and Trauma Surgeon",
+    image: Mahrukh,
+    //specialization: "Surgeon",
+    //experience: "10+ years",
+    //description: " Arthroplasty Arthroscopy,  and Trauma Surgeon ",
+    qualifications: " MBBS.RMO",
     availability: "Mon-Fri: 9AM-5PM",
   },
   {
@@ -91,12 +114,12 @@ export const teamData = [
   {
     id: 7,
     name: "Mr. Syed Zaman",
-    role: "Cordinator",
+    role: "Coordinator",
     image: Zaman,
     specialization: " Management",
     experience: "5+ years",
     description: "Coordinates patient care and service delivery",
-    qualifications: "MBA Healthcare Management",
+    qualifications: "B.Tech Computer Science",
     availability: "Mon-Fri: 9AM-6PM",
   },
 ];

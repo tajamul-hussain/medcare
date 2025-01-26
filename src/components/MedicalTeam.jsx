@@ -82,14 +82,20 @@ const MedicalTeam = ({ setSelectedPage }) => {
                   <p className="text-sm font-semibold text-yellow">
                     {member.specialization}
                   </p>
-                  <p className="text-sm">{member.experience} Experience</p>
+                  {member.experience && (
+                    <p className="text-sm">{member.experience} Experience</p>
+                  )}
                 </div>
 
                 <p className="text-sm mb-4">{member.description}</p>
 
                 <div className="text-sm">
-                  <p className="font-semibold">Qualifications:</p>
-                  <p className="mb-2">{member.qualifications}</p>
+                  {member.qualifications && (
+                    <>
+                      <p className="font-semibold">Qualifications:</p>
+                      <p className="mb-2">{member.qualifications}</p>
+                    </>
+                  )}
                   <p className="font-semibold">Availability:</p>
                   <p>{member.availability}</p>
                 </div>
