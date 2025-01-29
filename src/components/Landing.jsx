@@ -14,8 +14,9 @@ const Landing = ({ setSelectedPage }) => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        backgroundAttachment: "scroll",
         width: "100%",
+        height: "100%",
       }}
     >
       {/* Dark Overlay */}

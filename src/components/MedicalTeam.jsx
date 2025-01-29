@@ -12,9 +12,10 @@ const MedicalTeam = ({ setSelectedPage }) => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        backgroundAttachment: "scroll",
         minHeight: "100vh",
         width: "100%",
+        height: "100%",
       }}
     >
       {/* Dark Overlay */}

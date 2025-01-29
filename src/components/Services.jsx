@@ -16,9 +16,10 @@ const Services = ({ setSelectedPage }) => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
+        backgroundAttachment: "scroll",
         minHeight: "100vh",
         width: "100%",
+        height: "100%",
       }}
     >
       <div className="absolute inset-0 bg-deep-blue/70 z-0"></div>
