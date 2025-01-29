@@ -10,6 +10,9 @@ import Muzamil from "../assets/Muzamil.jpeg";
 //import doctor3 from "../assets/team/person-3.jpeg";
 import Irshad from "../assets/irshad.jpeg";
 import Mahrukh from "../assets/Mahrukh.jpeg";
+import Saijaid from "../assets/sajaid.jpeg";
+import Saliq from "../assets/Saliq.jpeg";
+
 export const teamData = [
   {
     id: 8,
@@ -50,7 +53,7 @@ export const teamData = [
     role: "Medical Director",
     image: GulAfroz,
     specialization: "Emergency Medicine",
-    experience: "10+ years of Experience",
+    experience: "10+ years of ",
     description: "",
     qualifications: "BUMS",
     availability: "Mon-Fri: 9AM-5PM",
@@ -112,9 +115,31 @@ export const teamData = [
     availability: "Mon-Fri: 9AM-6PM",
   },
   {
+    id: 20,
+    name: "SAJAID AHMAD WANI",
+    role: "GNM",
+    image: Saijaid,
+    specialization: " GNM",
+    experience: "5+ years",
+    // description: "Coordinates patient care and service delivery",
+    // qualifications: "B.Tech Computer Science",
+    availability: "Mon-Fri: 9AM-6PM",
+  },
+  {
+    id: 21,
+    name: "Saliq Manzoor",
+    role: "Nurse",
+    image: Saliq,
+    specialization: "Nurse",
+    //experience: "5+ years",
+    // description: "Coordinates patient care and service delivery",
+    // qualifications: "B.Tech Computer Science",
+    availability: "Mon-Fri: 9AM-6PM",
+  },
+  {
     id: 7,
     name: "Mr. Syed Zaman",
-    role: "Coordinator",
+    role: "Director",
     image: Zaman,
     specialization: " Management",
     experience: "5+ years",
