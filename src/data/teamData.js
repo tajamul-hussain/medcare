@@ -16,7 +16,7 @@ import Saliq from "../assets/Saliq.jpeg";
 export const teamData = [
   {
     id: 8,
-    name: "Dr. Irshad Ahmad",
+    name: "Dr. Irshad Tabasum",
     role: "Arthroplasty Arthroscopy,  and Trauma Surgeon",
     image: Irshad,
     specialization: "Surgeon",
@@ -44,7 +44,7 @@ export const teamData = [
     specialization: "Pain Specialist",
     experience: "12+ years",
     //description: "Expert in emergency care and critical medical situations",
-    qualifications: "MBBS",
+    qualifications: "MBBS , Md , FIFM",
     availability: "24/7 On-Call",
   },
   {
