@@ -44,7 +44,7 @@ export const teamData = [
     specialization: "Pain Specialist",
     experience: "12+ years",
     //description: "Expert in emergency care and critical medical situations",
-    qualifications: "MBBS , Md , FIFM",
+    qualifications: "MBBS , MD , FIPM",
     availability: "24/7 On-Call",
   },
   {

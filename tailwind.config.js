@@ -5,20 +5,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: "#2cbce9",
-        red: "#dc4492",
-        yellow: "#fdcc49",
+        blue: "#2196F3", // Primary blue
+        "light-blue": "#64B5F6", // Secondary blue
+        teal: "#009688", // Medical teal
+        "sage-green": "#4CAF50", // Healing green
         grey: "#ededed",
-        "olive-green": "#808000",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        yellow: "#FFB74D", // Warm accent
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+          "linear-gradient(81.66deg, #2196F3 7.21%, #009688 45.05%, #4CAF50 78.07%)",
         "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+          "linear-gradient(90deg, #2196F3 14.53%, #009688 69.36%, #4CAF50 117.73%)",
+        "gradient-healthcare":
+          "linear-gradient(90deg, #2196F3, #009688, #4CAF50)",
         "gradient-cloudCity":
           "linear-gradient(90deg, #3A6A59 ,    #A7A88A , #3A6A59, #A7A88A)",
       }),

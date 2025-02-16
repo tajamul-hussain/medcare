@@ -30,7 +30,7 @@ const ServiceDetail = ({ service, onBack }) => {
         <p className="text-lg text-gray-300 mb-6">{service.description}</p>
         <button
           onClick={handleCallButton}
-          className="bg-yellow text-deep-blue px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-red hover:text-white transition duration-300"
+          className="bg-teal text-white px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-sage-green hover:text-white transition duration-300"
         >
           <FaPhoneAlt /> Book On Call
         </button>

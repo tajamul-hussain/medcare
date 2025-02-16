@@ -54,7 +54,7 @@ const MedicalTeam = ({ setSelectedPage }) => {
           {teamData.map((member, index) => (
             <motion.div
               key={member.id}
-              className="bg-red rounded-xl shadow-md overflow-hidden"
+              className="bg-teal rounded-xl shadow-md overflow-hidden"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
